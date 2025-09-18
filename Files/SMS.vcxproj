@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{726F2623-C669-4B46-8A9B-40908D9F7375}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>SMS</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddAdmin.cpp" />
+    <ClCompile Include="Assignment.cpp" />
+    <ClCompile Include="Attendance_Student.cpp" />
+    <ClCompile Include="Attendance_Studentt.cpp" />
+    <ClCompile Include="Edit_Student.cpp" />
+    <ClCompile Include="Edit_Teacher.cpp" />
+    <ClCompile Include="FeaturesAdmin.cpp" />
+    <ClCompile Include="Final.cpp" />
+    <ClCompile Include="Info_Student.cpp" />
+    <ClCompile Include="Info_Teacher.cpp" />
+    <ClCompile Include="Login_Admin.cpp" />
+    <ClCompile Include="Login_Student.cpp" />
+    <ClCompile Include="Login_Teacher.cpp" />
+    <ClCompile Include="Mid.cpp" />
+    <ClCompile Include="Quiz.cpp" />
+    <ClCompile Include="Remove_Student.cpp" />
+    <ClCompile Include="Search_Student.cpp" />
+    <ClCompile Include="Student_Home.cpp" />
+    <ClCompile Include="Teacher_Attendance.cpp" />
+    <ClCompile Include="Teacher_Home.cpp" />
+    <ClCompile Include="Teacher_Marks.cpp" />
+    <ClCompile Include="Teacher_Marks2.cpp" />
+    <ClCompile Include="Transcript.cpp" />
+    <ClCompile Include="Transcript_User.cpp" />
+    <ClCompile Include="User_Admin.cpp" />
+    <ClCompile Include="User_Student_Admin.cpp" />
+    <ClCompile Include="User_Teacher_Admin.cpp" />
+    <ClCompile Include="WHO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddAdmin.h" />
+    <ClInclude Include="Assignment.h" />
+    <ClInclude Include="Attendance_Student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Attendance_Studentt.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Edit_Student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Edit_Teacher.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FeaturesAdmin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Final.h" />
+    <ClInclude Include="Info_Student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Info_Teacher.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Login_Admin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Login_Student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Login_Teacher.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Mid.h" />
+    <ClInclude Include="Quiz.h" />
+    <ClInclude Include="Remove_Student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Search_Student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Student_Home.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Teacher_Attendance.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Teacher_Home.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Teacher_Marks.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Teacher_Marks2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Transcript.h" />
+    <ClInclude Include="Transcript_User.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="User_Admin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="User_Student_Admin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="User_Teacher_Admin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="WHO.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Attendance_Student.resx">
+      <DependentUpon>Attendance_Student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance_Studentt.resx">
+      <DependentUpon>Attendance_Studentt.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Student.resx">
+      <DependentUpon>Edit_Student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Teacher.resx">
+      <DependentUpon>Edit_Teacher.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeaturesAdmin.resx">
+      <DependentUpon>FeaturesAdmin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info_Student.resx">
+      <DependentUpon>Info_Student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info_Teacher.resx">
+      <DependentUpon>Info_Teacher.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Admin.resx">
+      <DependentUpon>Login_Admin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Student.resx">
+      <DependentUpon>Login_Student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Teacher.resx">
+      <DependentUpon>Login_Teacher.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remove_Student.resx">
+      <DependentUpon>Remove_Student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Student.resx">
+      <DependentUpon>Search_Student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Home.resx">
+      <DependentUpon>Student_Home.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Attendance.resx">
+      <DependentUpon>Teacher_Attendance.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Home.resx">
+      <DependentUpon>Teacher_Home.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Marks.resx">
+      <DependentUpon>Teacher_Marks.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Marks2.resx">
+      <DependentUpon>Teacher_Marks2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transcript_User.resx">
+      <DependentUpon>Transcript_User.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Admin.resx">
+      <DependentUpon>User_Admin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Student_Admin.resx">
+      <DependentUpon>User_Student_Admin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Teacher_Admin.resx">
+      <DependentUpon>User_Teacher_Admin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WHO.resx">
+      <DependentUpon>WHO.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
